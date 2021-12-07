@@ -1,0 +1,35 @@
+ <html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-secondary">Bookmarker</h1>
+            <hr>
+            <div class="main  text-center w-75 m-auto backGround p-5 shadow">
+                
+                <h5 class="mt-5">Site Name</h5>
+                <input type="text" class="form-control p-2  mt-3"  id="siteName" placeholder="Bookmark Name">
+                <div class="alert alert-danger my-2 d-none">Name is required</div>
+                <h5 class="mt-5" >Site URL</h5>
+                <input type="text" class="form-control p-2  mt-3" id="siteUrl" placeholder="Website URL">
+                <div class="alert alert-danger my-2 d-none">URL is required</div>
+                <button id="addBtn" disabled class="btn btn-lg rounded-pill shadow btn-primary mt-5 ">Submit</button>
+            </div>
+            
+        </div>
+        <div class="container py-5">
+            <input id="searchInput" class="form-control my-5 mx-auto w-50 " type="text" placeholder="Search by name">
+            <table class="table">
+                
+                <tbody id="tableBody">
+                   
+                </tbody>
+            </table>
+        </div>
+           
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
